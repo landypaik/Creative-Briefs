@@ -1,0 +1,451 @@
+/*
+
+Theme Name: 	Starkers Plus
+
+Theme URI: 		http://
+
+Description: 	Based on Starkers 4.0 with a few tweaks!
+
+Version: 		1.0
+
+Author: 		Andrew Twigg
+
+Author URI: 	http://andrewtwigg.com
+
+Tags: 			custom, starkers
+
+*/
+
+
+
+/*
+
+===========================
+
+CONTENTS:
+
+
+
+01 Sensible defaults
+
+02 Typography
+
+03 Media queries 
+
+===========================
+
+*/
+
+
+
+/* ---------------------------------------------------------------------------------------------------------- 
+
+01 Sensible defaults ----------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------------------------- */
+
+
+
+@import "css/reset.css";
+
+
+
+div,
+
+article,
+
+section,
+
+header,
+
+footer,
+
+nav,
+
+li					{ position:relative; /* For absolutely positioning elements within containers (add more to the list if need be) */ }
+
+.group:after 		{ display:block; height:0; clear:both; content:"."; visibility:hidden; /* For clearing */ }
+
+body 				{ background:#fff; /* Don't forget to style your body to avoid user overrides */ }
+
+::-moz-selection 	{ background:#ff0; color:#333; }
+
+::selection 		{ background:#ff0; color:#333; }
+
+
+
+/* ---------------------------------------------------------------------------------------------------------- 
+
+02 Typography -----------------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------------------------- */
+
+/*
+
+
+
+14 / 16	= 		0.875em 		(14px equivalent)
+
+16 / 16	= 		1em 			(16px equivalent)
+
+18 / 16 = 		1.125em 		(18px equivalent)
+
+21 / 16 = 		1.3125em 		(21px equivalent)
+
+24 / 16 = 		1.5em 			(24px equivalent)
+
+30 / 16 = 		1.875em 		(30px equivalent)
+
+
+
+*/
+
+
+
+body,
+
+input,
+
+textarea 			{ /* We strongly recommend you declare font-weight using numerical values, but check to see which weights you're exporting first */ }
+
+
+
+h1, 
+
+h2, 
+
+h3, 
+
+h4, 
+
+h5, 
+
+h6 					{ font-weight:bold; /* This helps to identify headings at the initial build stage, but you should write something more precise later on */ }
+
+
+
+/* ---------------------------------------------------------------------------------------------------------- 
+
+03 Desktop  ------------------------------------------------------------
+
+---------------------------------------------------------------------------------------------------------- */
+
+
+
+#cblogo {
+
+	height: 50px;
+
+}
+
+
+
+#full_width {
+
+	background-image: url("http://creative-briefs.com/wp-content/uploads/2015/04/background_texture.png");
+
+}
+
+
+
+#container {
+
+	width: 1100px;
+
+	margin: 0 auto;
+
+	text-align: center;
+
+}
+
+
+
+.home_audio {
+
+	width: 45px;
+
+	position: absolute;
+
+	top: 1em;
+
+	left: 1.3em;
+
+	z-index: 2;
+
+}
+
+
+
+.oneBox, .episodeBox {
+
+	display: inline-block;
+
+	width: 29.9%;
+
+	height: 260px;
+
+  	margin: 1em;
+
+  	overflow: hidden;
+
+}
+
+
+
+body.home .oneBox:first-child {
+
+	display: inline-block;
+
+	width: 46.5%;
+
+	height: 400px;
+
+	margin: 1em;
+
+  	overflow: hidden;
+
+}
+
+
+
+body.home .oneBox:nth-child(2) {
+
+	display: inline-block;
+
+	width: 46.5%;
+
+	height: 400px;
+
+	margin: 1em;
+
+  	overflow: hidden;
+
+}
+
+
+
+.oneBox a img, .episodeBox a img {
+
+	height: 100%;
+
+	width: auto;
+
+}
+
+
+
+
+
+/* ---------------------------------------------------------------------------------------------------------- 
+
+04 Media queries ------------------------------------------------------------
+
+---------------------------------------------------------------------------------------------------------- */
+
+
+
+@media screen and (max-width:1100px) {
+
+
+
+#container {
+
+	width: 100%;
+
+	margin: 0;
+
+	text-align: center;
+
+
+
+}
+
+
+
+.oneBox, .episodeBox {
+
+	width: 46%;
+
+	margin: 0.8em;
+
+}
+
+
+
+.oneBox a img, .episodeBox a img {
+
+	width: 100%;
+
+	height: auto;
+
+}
+
+
+
+.oneBox:first-child {
+
+	display: inline-block;
+
+	width: 46%;
+
+	height: 400px;
+
+	margin: 1em;
+
+  	overflow: hidden;
+
+}
+
+
+
+.oneBox:nth-child(2) {
+
+	display: inline-block;
+
+	width: 46%;
+
+	height: 400px;
+
+	margin: 1em;
+
+  	overflow: hidden;
+
+}
+
+}
+
+
+
+@media screen and (max-width:768px) {
+
+
+
+#container {
+
+	width: 100%;
+
+	margin: 0;
+
+	text-align: center;
+
+
+
+}
+
+
+
+.oneBox, .episodeBox {
+
+	width: 90%;
+
+}
+
+
+
+.oneBox:first-child {
+
+	display: inline-block;
+
+	width: 90%;
+
+	height: 400px;
+
+	margin: 1em;
+
+  	overflow: hidden;
+
+}
+
+
+
+.oneBox:nth-child(2) {
+
+	display: inline-block;
+
+	width: 90%;
+
+	height: 400px;
+
+	margin: 1em;
+
+  	overflow: hidden;
+
+}
+
+
+
+}
+
+
+
+@media screen and (max-width:500px) {
+
+
+
+#container {
+
+	width: 100%;
+
+	margin: 0;
+
+	text-align: center;
+
+}
+
+
+
+.oneBox, .episodeBox {
+
+	width: 90%;
+
+}
+
+
+
+.oneBox:first-child {
+
+	display: inline-block;
+
+	width: 90%;
+
+	height: 400px;
+
+	margin: 1em;
+
+  	overflow: hidden;
+
+}
+
+
+
+.oneBox:nth-child(2) {
+
+	display: inline-block;
+
+	width: 90%;
+
+	height: 400px;
+
+	margin: 1em;
+
+  	overflow: hidden;
+
+}
+
+
+
+}
+
+
+
+/* Retina Display */
+
+@media screen and (-webkit-min-device-pixel-ratio:2) {
+
+
+
+					{ /* Place your styles here for all 'Retina' screens */ }
+
+
+
+}
